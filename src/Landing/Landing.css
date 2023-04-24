@@ -1,0 +1,156 @@
+.hero h1 {
+  color: var(--dark);
+}
+
+.landing {
+  background-image: linear-gradient(var(--base) 15%, rgba(0, 0, 0, 0) 70%, var(--base)), url('../assets/Images/Landing.jpeg');
+
+}
+
+#docs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.doc-card {
+  display: flex;
+  flex-direction: row;
+  min-width: 275px;
+  margin: 4px
+}
+
+.doc-headshot {
+  width: 290px;
+  border-radius: 8px;
+  box-shadow: 0 0 32px var(--base);
+  z-index: 1;
+}
+
+.doc-text {
+  padding: 2px;
+  width: 275px;
+  text-align: justify;
+  margin-left: -275px;
+  visibility: hidden;
+  text-align: right;
+  font-size: 14.5px;
+  transition-property: margin-left;
+  transition: 1s;
+  color: var(--dark);
+}
+
+.doc-card:hover > .doc-text {
+  margin-left: 0px;
+  visibility: visible;
+}
+
+
+
+#meet-the-team {
+  margin-top: -90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  min-width: 100%;
+}
+
+#team {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 3vw;
+  background-image: linear-gradient(var(--base), var(--mid) 15% 85%, var(--base) 100%);
+
+}
+
+.team-card {
+  width: 150px;
+  align-items: center;
+  text-align: center;
+  display: block;
+  margin: 4vw;
+}
+
+.team-card img {
+  width: 150px;
+}
+
+.team-card p {
+  font-size: 12px;
+  width: 100%;
+  margin-top: 0px;
+  color: var(--base);
+}
+
+.reason-for-visit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:start;
+  width: 100%;
+  height: 100%;
+}
+
+.book {
+  border-radius: 500px;
+  border: 1px solid transparent;
+  padding: 0.3em .8em;
+  font-size: 1.25em;
+  font-weight: 500;
+  font-family: 'Aref Ruqaa Ink', serif;
+  background-color: var(--mid);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  
+  width: 270px;
+  /* align-self: center; */
+  box-shadow: 0 0 16px var(--base);
+  margin-top: 20vh;
+}
+
+@media (max-width: 950px) {
+  #docs {
+    flex-direction: column;
+    align-items: center;
+  }
+  .reason-for-visit {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .book {
+    align-self: center;
+    margin-top: 4em;
+  }
+}
+
+@media (max-width: 750px) {
+  #book {
+    font-size: 1.5em;
+  }
+  #meet-the-team {
+    flex-direction: column;
+    align-items: center;
+  }
+  .doc-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .doc-text {
+    text-align: center;
+    margin-left: 0px;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 500px) {
+  #book {
+    font-size: 1em;
+  }
+  .hero {
+    /* gap: 7vh; */
+    height: 50vh;
+  }
+}

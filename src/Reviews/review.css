@@ -1,0 +1,53 @@
+.review {
+  min-width: 400px;
+  box-shadow: 0 0 16px var(--mid);
+  border-radius: 16px;
+  padding: 16px;
+  margin: 0 8px;
+  color: var(--mid);
+}
+
+.review section {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.review h4 {
+  font-family: 'Aref Ruqaa Ink', serif;
+  font-size: 32px;
+  margin: 0px;
+}
+
+.review img {
+  width: 24px;
+}
+
+.reviews {
+  
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 32px;
+  overflow-x:scroll;
+  padding: 16px 0;
+  width: 100%;
+  scrollbar-width: 0px;
+}
+
+.reviews::-webkit-scrollbar {
+  display: none
+}
+
+@media (max-width: 500px) {
+  .review {
+    min-width: 200px;
+    max-height: 300px;
+  }
+  .review p {
+    white-space: nowrap;
+    overflow: hidden;
+    max-height: 300px;
+    text-overflow: ellipsis;
+    margin: 0;
+  }
+}
