@@ -2,7 +2,7 @@ import './review.css'
 
 
 
-import { Review } from "../types/review"
+import { Review } from "../types/data"
 
 interface ReviewProps {
   review: Review

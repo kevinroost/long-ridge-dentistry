@@ -1,3 +1,8 @@
+#services > .hero {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 20%, var(--base) 60%), url('Landing.jpeg');
+
+  background-repeat: no-repeat;
+}
 
 .service-list {
   width: 100%;

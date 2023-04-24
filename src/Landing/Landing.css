@@ -3,7 +3,7 @@
 }
 
 .landing {
-  background-image: linear-gradient(var(--base) 15%, rgba(0, 0, 0, 0) 70%, var(--base)), url('../assets/Images/Landing.jpeg');
+  background-image: linear-gradient(var(--base) 15%, rgba(0, 0, 0, 0) 70%, var(--base)), url('Landing.jpeg');
 
 }
 
@@ -25,6 +25,7 @@
   border-radius: 8px;
   box-shadow: 0 0 32px var(--base);
   z-index: 1;
+
 }
 
 .doc-text {

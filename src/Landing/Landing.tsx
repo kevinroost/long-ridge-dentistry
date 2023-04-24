@@ -1,4 +1,7 @@
 import Reviews from '../Reviews/Reviews'
+import TeamMemberCard from '../TeamMember/TeamMemberCard'
+import { TeamMember } from '../types/data'
+import { teamMembers } from '../data/teamMembers'
 import './Landing.css'
 
 interface ReasonProps {
@@ -29,7 +32,7 @@ const Landing = (props: ReasonProps): JSX.Element => {
         
         <div id='docs'>
           <div className='doc-card'>
-            <img className='doc-headshot' src="headshots/mabe-headshot.jpg" alt="mabe" />
+            <img className='doc-headshot' src="headshots/mabe-headshot.jpeg" alt="mabe" />
             <p className='doc-text'>Dr. Hannah Mabe came to the Valley from Patrick County, in southern Virginia. She received a Bachelor of Science in chemistry from the University of Virginia. Dr. Mabe pursued her dental education at Virginia Commonwealth University School of Dentistry, where she received her Doctor of Dental Surgery degree. After graduation, Dr. Mabe completed a General Practice Residency at The Ohio State University in Columbus, Ohio, where she gained additional training in surgery, medically complex cases, and treatment of special needs and pediatric patients.</p>
           </div>
           <div className='doc-card'>
@@ -39,34 +42,10 @@ const Landing = (props: ReasonProps): JSX.Element => {
         </div>
 
         <div id='team'>
-          <article className='team-card'>
-            <img src="src/assets/Images/mabe-headshot.jpeg" alt="" />
-            <p>Team Member's Name</p>
-          </article>
-          <article className='team-card'>
-            <img src="src/assets/Images/mabe-headshot.jpeg" alt="" />
-            <p>Team Member's Name</p>
-          </article>
-          <article className='team-card'>
-            <img src="src/assets/Images/mabe-headshot.jpeg" alt="" />
-            <p>Team Member's Name</p>
-          </article>
-          <article className='team-card'>
-            <img src="src/assets/Images/mabe-headshot.jpeg" alt="" />
-            <p>Team Member's Name</p>
-          </article>
-          <article className='team-card'>
-            <img src="src/assets/Images/mabe-headshot.jpeg" alt="" />
-            <p>Team Member's Name</p>
-          </article>
-          <article className='team-card'>
-            <img src="src/assets/Images/mabe-headshot.jpeg" alt="" />
-            <p>Team Member's Name</p>
-          </article>
-          <article className='team-card'>
-            <img src="src/assets/Images/mabe-headshot.jpeg" alt="" />
-            <p>Team Member's Name</p>
-          </article>
+          {teamMembers.map((member:TeamMember) => 
+            <TeamMemberCard key={member.name} member={member}/>
+          )}
+
         </div>
 
 
