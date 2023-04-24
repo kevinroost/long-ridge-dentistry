@@ -64,7 +64,9 @@ nav p,
 nav a {
   font-size: 18px;
   color: var(--dark);
+  text-decoration: inherit;
 }
+
 
 #header-contact {
   justify-content: space-around;
@@ -73,6 +75,7 @@ nav a {
 }
 
 #header-contact * {
+  text-decoration: inherit;
   color: var(--light);
 
 }

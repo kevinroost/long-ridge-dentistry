@@ -1,18 +1,19 @@
 import './Services.css'
 
-import { Service } from "../types/service"
+import { ServiceCategory } from "../types/data"
 
 interface ServiceProps {
-  service: Service;
+  service: ServiceCategory;
 }
 
 const ServiceOffered = ({service}: ServiceProps) : JSX.Element => {
 
+  const name = service.name
 
   return (
-    <article className={service.position}>
+    <article id={name} className={service.position}>
       <div className='service-info'>
-        <h2>{service.name}</h2>
+        <h2>{name}</h2>
         <p>{service.description}</p>
       </div>
       <div className='image'>

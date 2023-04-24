@@ -2,6 +2,26 @@
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 20%, var(--base) 60%), url('Landing.jpeg');
 
   background-repeat: no-repeat;
+  align-items: flex-end;
+  padding-right: 3em;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  list-style: none;
+  text-align: right;
+  padding-right: 2em;
+}
+
+ul a {
+  color: var(--mid);
+  font-size: 24px;
+  text-decoration: none;
+  width: max-content;
+  margin: 2px 0;
+
 }
 
 .service-list {
@@ -19,6 +39,7 @@
   align-items: center;
   margin: 16px;
 }
+
 
 .service-card > * {
   width: 40%;
@@ -77,5 +98,8 @@
 
 #services {
   overflow-y: hidden;
+  overflow-x: hidden;
 }
+
+
 

@@ -110,6 +110,8 @@
   /* align-self: center; */
   box-shadow: 0 0 16px var(--base);
   margin-top: 20vh;
+  color: var(--light);
+  text-decoration: none;
 }
 
 @media (max-width: 950px) {

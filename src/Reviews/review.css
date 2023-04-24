@@ -5,6 +5,7 @@
   padding: 16px;
   margin: 0 8px;
   color: var(--mid);
+  text-decoration: none;
 }
 
 .review section {

@@ -6,6 +6,7 @@ export interface ServiceCategory {
   image: string;
   position: string;
   services: string[];
+  methods?: string[];
 }
 
 export interface Review {
