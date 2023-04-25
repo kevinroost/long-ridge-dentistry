@@ -6,7 +6,7 @@
   padding-right: 3em;
 }
 
-ul {
+.hero ul {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -15,13 +15,19 @@ ul {
   padding-right: 2em;
 }
 
-ul a {
+.hero ul a {
   color: var(--mid);
   font-size: 24px;
   text-decoration: none;
   width: max-content;
-  margin: 2px 0;
+  margin: 4px 0;
+  height: max-content;
+}
 
+.hero ul a:hover {
+  color: var(--dark);
+  padding-right: 32px;
+  transition: .5s;
 }
 
 .service-list {
@@ -57,8 +63,18 @@ ul a {
   margin:  0;
 }
 
-.service-info p {
+.service-info ul {
+  list-style: none;
+  padding: 0 16px;
+}
+
+.service-info li {
   margin-top:  0;
+  
+}
+
+.methods {
+  text-align: center;
 }
 
 .service-info::-webkit-scrollbar {

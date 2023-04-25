@@ -9,7 +9,7 @@ const Services = (): JSX.Element => {
   return (
     <div className="page" id="services">
       <section className='hero'>
-        <h1>Services</h1>
+        <h1>Our Services</h1>
         <ul>
           {services.map(service => 
             

@@ -8,13 +8,27 @@ interface ServiceProps {
 
 const ServiceOffered = ({service}: ServiceProps) : JSX.Element => {
 
-  const name = service.name
+  const name = service.name.toUpperCase()
 
   return (
     <article id={name} className={service.position}>
       <div className='service-info'>
         <h2>{name}</h2>
-        <p>{service.description}</p>
+        <ul>
+          {service.services.map(s => 
+            <li>{s}</li>
+          )}
+        </ul>
+        {service.methods &&
+        <>
+          <ul className='methods'>
+            {service.methods.map(m => 
+              <li>{m}</li>
+            )}
+          </ul>
+        </>
+        }
+
       </div>
       <div className='image'>
 
