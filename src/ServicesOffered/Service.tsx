@@ -23,16 +23,17 @@ const ServiceOffered = ({service}: ServiceProps) : JSX.Element => {
         <>
           <ul className='methods'>
             {service.methods.map(m => 
-              <li>{m}</li>
+              <li>{m} -</li>
             )}
           </ul>
         </>
         }
 
       </div>
-      <div className='image'>
+      <img src="services/sample.jpg" alt="" />
+      {/* <div className='image'>
 
-      </div>
+      </div> */}
 
 
     </article>
