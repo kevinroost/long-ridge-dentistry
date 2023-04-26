@@ -4,7 +4,10 @@ import { useState } from 'react'
 
 import { services } from "../data/services"
 import { ServiceCategory } from '../types/data'
+
 import ServiceOffered from "./Service"
+import {Prevention, GenDent, Pedi, Perio, Ortho, Rest, Cosmetic, Airway, Tmj} from "./ServiceInfo"
+
 
 const Services = (): JSX.Element => {
   const [activeService, setActiveService] = useState(services[0])
@@ -13,6 +16,9 @@ const Services = (): JSX.Element => {
     setActiveService(service)
   }
 
+  const servicesArr: React.ReactElement[] = [<Prevention/>, <GenDent/>, <Perio/>, <Pedi/>, <Ortho/>, <Rest/>, <Cosmetic/>, <Airway/>, <Tmj/>]
+
+  
   return (
     <div className="page" id="services">
       <section className='hero'>
@@ -24,12 +30,11 @@ const Services = (): JSX.Element => {
           )}
         </ul>
       </section>
-      <section className="service-list">
+      <section className="service-body">
 
         <ServiceOffered key={activeService.name} service={activeService}/>
-        {/* {services.map(service =>
+        {servicesArr[services.indexOf(activeService)]}
 
-        )} */}
       </section>
     </div>
   )

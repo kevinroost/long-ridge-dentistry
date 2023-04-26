@@ -11,30 +11,23 @@ const ServiceOffered = ({service}: ServiceProps) : JSX.Element => {
   const name = service.name.toUpperCase()
 
   return (
-    <article id={name} className={service.position}>
-      <div className='service-info'>
-        <h2>{name}</h2>
+    <article id={name} className='service-list'>
+
+        <h1>{name}</h1>
         <ul>
           {service.services.map(s => 
             <li>{s}</li>
           )}
+          {service.methods &&
+          <>
+            <ul className='methods'>
+              {service.methods.map(m => 
+                <li>- {m}</li>
+              )}
+            </ul>
+          </>
+          }
         </ul>
-        {service.methods &&
-        <>
-          <ul className='methods'>
-            {service.methods.map(m => 
-              <li>{m} -</li>
-            )}
-          </ul>
-        </>
-        }
-
-      </div>
-      <img src="services/sample.jpg" alt="" />
-      {/* <div className='image'>
-
-      </div> */}
-
 
     </article>
   )

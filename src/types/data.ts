@@ -4,7 +4,6 @@ export interface ServiceCategory {
   name: string;
   description: string;
   image: string;
-  position: string;
   services: string[];
   methods?: string[];
 }
