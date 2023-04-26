@@ -9,8 +9,6 @@ import Services from './ServicesOffered/Services'
 import NewPatient from './NewPatient/NewPatient'
 import Footer from './Footer/Footer'
 
-import { messageFormData } from './types/forms'
-
 
 function App() {
   const [reason, setReason] = useState('')
@@ -21,6 +19,7 @@ function App() {
 
   const handleSetReason = (reason: string): void => {
     setReason(reason)
+    document.getElementById('full-name-input')!.focus()
   }
 
   return (

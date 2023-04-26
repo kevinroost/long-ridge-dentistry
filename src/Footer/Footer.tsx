@@ -51,7 +51,6 @@ const Footer = (props: FooterProps) : JSX.Element => {
   }
   
   useEffect((): void => {
-    // formData.description = reason
     setFormData({ ...formData, description: reason})
   }, [reason])
   
@@ -70,7 +69,8 @@ const Footer = (props: FooterProps) : JSX.Element => {
               onSubmit={handleSubmit}
               >
               <input 
-                type="text" 
+                type="text"
+                id='full-name-input'
                 placeholder='Full Name'
                 name='fullName'
                 onChange={handleChange}

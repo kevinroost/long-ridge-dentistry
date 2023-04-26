@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"
 import './NavBar.css'
 
 const NavBar = (): JSX.Element => {
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   const toggle = () => {
     setIsOpen(!isOpen)

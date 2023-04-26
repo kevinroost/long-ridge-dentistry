@@ -127,6 +127,10 @@
     align-self: center;
     margin-top: 4em;
   }
+  .doc-text {
+    margin-left: 0px;
+    visibility: visible;
+  }
 }
 
 @media (max-width: 750px) {
@@ -143,8 +147,7 @@
   }
   .doc-text {
     text-align: center;
-    margin-left: 0px;
-    visibility: visible;
+
   }
 }
 

@@ -23,7 +23,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
-  scroll-padding-top: 100px;
+  scroll-padding-top: 50%;
 
   scroll-behavior: smooth;
   
