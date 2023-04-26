@@ -107,7 +107,7 @@
 }
 
 @media (max-width: 850px) {
-  .service-card {
+  .service-body {
     width: 100%;
     height: auto;
     flex-direction: column;
