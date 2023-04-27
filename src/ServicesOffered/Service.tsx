@@ -16,13 +16,13 @@ const ServiceOffered = ({service}: ServiceProps) : JSX.Element => {
         <h1>{name}</h1>
         <ul>
           {service.services.map(s => 
-            <li>{s}</li>
+            <li key={s}>{s}</li>
           )}
           {service.methods &&
           <>
             <ul className='methods'>
               {service.methods.map(m => 
-                <li>- {m}</li>
+                <li key={m}>- {m}</li>
               )}
             </ul>
           </>

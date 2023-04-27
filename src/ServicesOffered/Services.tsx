@@ -19,6 +19,7 @@ const Services = (): JSX.Element => {
   const servicesArr: React.ReactElement[] = [<Prevention/>, <GenDent/>, <Perio/>, <Pedi/>, <Ortho/>, <Rest/>, <Cosmetic/>, <Airway/>, <Tmj/>]
 
   
+  
   return (
     <div className="page" id="services">
       <section className='hero'>
@@ -26,7 +27,7 @@ const Services = (): JSX.Element => {
         <ul>
           {services.map(service => 
             
-            <a href={`#${service.name.toUpperCase()}`} onClick={() => handleSetActiveService(service)}>{service.name}</a>
+            <a key={service.name} href={`#${service.name.toUpperCase()}`} onClick={() => handleSetActiveService(service)}>{service.name}</a>
           )}
         </ul>
       </section>
