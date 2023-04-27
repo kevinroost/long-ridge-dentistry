@@ -32,7 +32,7 @@ function App() {
         />
         <Route
         path='/services'
-        element={<Services/>}
+        element={<Services handleSetReason={handleSetReason}/>}
         />
         <Route
         path='/new'

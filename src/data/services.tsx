@@ -12,7 +12,7 @@ const services: ServiceCategory[] = [
     name: 'General Dentistry',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti non similique consectetur vel accusantium aliquam necessitatibus, quia consequuntur velit eos cum ad cumque asperiores fuga maxime natus nobis amet! Dignissimos.',
     image: '/services/sample.jpg',
-    services: ['White Bonded Tooth Fillings', 'Onlays', 'Crowns', 'Root Canals', 'Tooth Extractions', 'Nitrous Oxide ("Laughing Gas")']
+    services: ['White Bonded Tooth Fillings', 'Crowns', 'Onlays', 'Root Canals', 'Tooth Extractions', 'Nitrous Oxide ("Laughing Gas")']
   }, {
     name: 'Periodontal ("Gum") Therapies',
     description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores iusto, dolores quibusdam quisquam laborum, voluptates modi sequi praesentium ipsa alias sint perferendis reprehenderit ea fuga eveniet iste, asperiores labore veniam?',
@@ -22,7 +22,7 @@ const services: ServiceCategory[] = [
     name: 'Pediatric Child Dentistry',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsum ea, unde accusamus dolorum dignissimos officiis dolores corporis, maiores id in vitae vero fugit. Dolor maxime nam earum quod illum!',
     image: '/services/sample.jpg',
-    services: ['Cleanings & Exams', 'White Bonded Tooth Fillings', 'Pediatric Crowns', 'Healthy Start', 'Space Maintainers', 'Expanders', 'Nitrous Oxide ("Laughing Gas")']
+    services: ['Cleanings & Exams', 'White Bonded Tooth Fillings', 'Pediatric Crowns', 'HealthyStart', 'Space Maintainers', 'Expanders', 'Nitrous Oxide ("Laughing Gas")']
   }, {
     name: 'Orthodontics',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ipsum ea, unde accusamus dolorum dignissimos officiis dolores corporis, maiores id in vitae vero fugit. Dolor maxime nam earum quod illum!',
