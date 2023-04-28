@@ -6,7 +6,7 @@ const services: ServiceCategory[] = [
     name: 'Prevention',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex maxime quae ipsum id minima dolor sequi dolorem iure ducimus quis, modi provident ad eos fugiat. Magnam eum aliquid omnis sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, dolorem maxime est unde quos exercitationem quae hic repudiandae? Sequi velit eos culpa eaque dolor ipsum quam, dolorum corrupti tempora repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero illum dolores labore in quod quos accusamus. Ab neque dolore veniam illum fugit assumenda dolores maxime. Obcaecati eaque excepturi temporibus animi!',
     image: '/services/sample.jpg',
-    services: ['Prophylaxis ("Cleaning")', 'Exams', 'Oral Cancer Screening', 'Cavity Prevention, including:', ],
+    services: ['Prophylaxis ("Cleaning")', 'Exams', 'Oral Cancer Screening', 'Cavity Prevention', ],
     methods: ['Sealants', 'Flouride Varnish', 'Silver Diamine Flouride', 'Prescription Toothpaste']
   }, {
     name: 'General Dentistry',

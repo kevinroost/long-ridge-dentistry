@@ -16,7 +16,7 @@ const ServiceOffered = ({service}: ServiceProps) : JSX.Element => {
         <h1>{name}</h1>
         <ul>
           {service.services.map(s => 
-            <li key={s}>{s}</li>
+            <a href={`#${s}`}><li key={s}>{s}</li></a>
           )}
           {service.methods &&
           <>

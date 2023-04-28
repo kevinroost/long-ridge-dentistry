@@ -4,7 +4,7 @@ export const Prevention = (): JSX.Element => {
 
   return (
     <div className="info">
-      <h2>Prophylaxis</h2>
+      <h2 id={`Prophylaxis ("Cleaning")`}>Prophylaxis</h2>
 
       <p>Dental cleaning, also known as prophylaxis, is a dental procedure that involves the removal of plaque, tartar, and other debris from the teeth and gums. This procedure involves the use of specialized tools, such as a scaler or an ultrasonic instrument, to remove buildup on the teeth and below the gumline. The cleaning may also include polishing the teeth to remove surface stains and make them smoother and more resistant to future plaque buildup.</p>
         
@@ -12,7 +12,7 @@ export const Prevention = (): JSX.Element => {
         
       <p>It is recommended that individuals undergo a dental cleaning every six months, although this may vary depending on individual needs and risk factors.</p>
 
-      <h2>Exams</h2>
+      <h2 id='Exams'>Exams</h2>
 
       <p>During your exam, Dr. Mabe will examine the teeth, gums, and mouth to assess overall oral health and identify any potential problems. </p>
 
@@ -29,7 +29,7 @@ export const Prevention = (): JSX.Element => {
 
       <p>Based on the results of the exam, the dentist or hygienist may recommend further treatment, such as a dental cleaning, filling, or other procedure, to address any issues and maintain good oral health.</p>
 
-      <h2>Cavity Prevention</h2>
+      <h2 id='Cavity Prevention'>Cavity Prevention</h2>
 
       <h3>Dental Sealants</h3>
 
@@ -63,13 +63,13 @@ export const GenDent = (): JSX.Element => {
 
   return (
     <div className="info">
-      <h2>White Bonded Tooth Fillings</h2>
+      <h2 id='White Bonded Tooth Fillings'>White Bonded Tooth Fillings</h2>
 
       <p>White bonded tooth fillings, also known as composite resin fillings, are made from a tooth-colored material that is designed to blend in with the natural color of the tooth.</p>
 
       <p><b>White bonded tooth fillings offer several advantages over traditional silver fillings. They are more aesthetically pleasing, as they can be matched to the color of the surrounding teeth. They are also less likely to expand and contract with changes in temperature, which can cause the tooth to crack or break over time. </b></p>
 
-      <h2>Crowns</h2>
+      <h2 id='Crowns'>Crowns</h2>
 
       <p><b>When damage to a person’s teeth is extreme, and apparently beyond repair, we can use porcelain or porcelain fused to metal crowns to make the smile appear “as new”. This is an extremely reliable technique for repairing the most severe of dental problems, even permanently replacing missing teeth to offer a complete smile and a functional bite.</b></p>
 
@@ -81,7 +81,7 @@ export const GenDent = (): JSX.Element => {
 
       <p>On the second visit, we will remove the temporary crown and then fit and adjust the final crown. Finally, we will cement the crown into place and you have a new beautiful looking tooth.</p>
 
-      <h2>Onlays</h2>
+      <h2 id='Onlays'>Onlays</h2>
 
       <p><b>In some cases, where the damage to the tooth is not extensive enough to merit an entire crown, onlays can provide a very good alternative.</b></p>
 
@@ -93,7 +93,7 @@ export const GenDent = (): JSX.Element => {
 
       <p>At the second appointment, the temporary is removed. Dr. Hutchens will then make sure that the inlay or onlay fits correctly. If the fit is satisfactory, the inlay or onlay will be bonded to the tooth with a strong resin and polished to a smooth finish.</p>
 
-      <h2>Root Canals</h2>
+      <h2 id='Root Canals'>Root Canals</h2>
 
       <p>When the nerve of a tooth becomes infected or the pulp becomes damaged, the nerve and pulp break down and bacteria begins to multiply inside the pulp chamber, eventually resulting in a possible abscess. </p>
 
@@ -109,13 +109,13 @@ export const GenDent = (): JSX.Element => {
         <li>Swollen or tender gums around the tooth</li>
       </ul>
 
-      <h2>Tooth Extractions</h2>
+      <h2 id='Tooth Extractions'>Tooth Extractions</h2>
 
       <p>A tooth may need to be extracted because it is severely decayed, has advanced periodontal disease, or has broken in a way that cannot be repaired. Sometimes extraction is necessary because a tooth is poorly positioned in the mouth (such as an impacted tooth), or in preparation for orthodontic treatment.</p>
 
       <p><b>The removal of a single tooth can lead to problems related to your chewing ability, problems with your jaw joint, and shifting teeth, which can have a major impact on your dental health. To avoid these complications, in most cases, Dr. Hutchens will discuss alternatives to extractions as well as replacement of the extracted tooth.</b></p>
 
-      <h2>Nitrous Oxide</h2>
+      <h2 id='Nitrous Oxide ("Laughing Gas")'>Nitrous Oxide</h2>
 
       <p>Also known as Laughing Gas, Nitrous Oxide is a colorless, odorless gas that can be used as a form of sedation during dental procedures. </p>
         
@@ -141,7 +141,7 @@ export const Pedi = (): JSX.Element => {
   return (
     <div className="info">
       <h1>Pediatric Dentistry</h1>
-      <h2>Nitrous Oxide</h2>
+      <h2 id='Nitrous Oxide ("Laughing Gas")'>Nitrous Oxide</h2>
 
       <p>Also known as Laughing Gas, Nitrous Oxide is a colorless, odorless gas that can be used as a form of sedation during dental procedures. </p>
   
@@ -162,7 +162,7 @@ export const Ortho = (props: ReasonProps): JSX.Element => {
 
   return (
     <div className="info">
-      <h2>Invisalign</h2>
+      <h2 id='Invisalign'>Invisalign</h2>
 
       <p>Straighten your teeth with a simple and comfortable alternative to traditional braces. Invisalign has been used for almost 20 years to help people achieve a better smile without the headaches of traditional braces.</p>
 
