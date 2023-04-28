@@ -23,7 +23,7 @@ function App() {
   }
 
   const fb = 'https://www.facebook.com/James-F-Hutchens-DDS-928358623880873/'
-  const ig = ''
+  const ig = 'http://instagram.com/_u/longridge_dentistry'
 
   return (
     <>

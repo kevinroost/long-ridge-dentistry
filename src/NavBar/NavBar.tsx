@@ -24,7 +24,7 @@ const NavBar = (props: NavBarProps): JSX.Element => {
     <nav>
       <section id="header-contact">
         <a href='tel:+15403372400'>Call! (540)337-2400</a>
-        <p>Follow! &nbsp;&nbsp;&nbsp; <a href={fb} target='_blank'><img src="/Instagram.png" alt="ig" /></a> &nbsp;&nbsp;&nbsp; <a href={fb} target='_blank'><img src="/Facebook.png" alt="fb" /></a></p>
+        <p>Follow! &nbsp;&nbsp;&nbsp; <a href={ig} target='_blank'><img src="/Instagram.png" alt="ig" /></a> &nbsp;&nbsp;&nbsp; <a href={fb} target='_blank'><img src="/Facebook.png" alt="fb" /></a></p>
       </section>
 
       <section id='header'>
