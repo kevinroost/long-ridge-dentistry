@@ -62,7 +62,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 3vw;
+  padding: 3em;
   background-image: linear-gradient(var(--base), var(--mid) 15% 85%, var(--base) 100%);
 
 }
