@@ -68,11 +68,15 @@
 }
 
 .team-card {
-  width: 150px;
+  /* width: 150px; */
   align-items: center;
   text-align: center;
   display: block;
-  margin: 4vw;
+  /* margin: 1vw; */
+}
+
+.team-card:first-child {
+  width: 100vw;
 }
 
 .team-card img {
@@ -131,6 +135,9 @@
     margin-left: 0px;
     visibility: visible;
   }
+  .team-card:nth-last-child(-n+4){
+    width: 50vw;
+  }
 }
 
 @media (max-width: 750px) {
@@ -158,5 +165,9 @@
   .hero {
     /* gap: 7vh; */
     height: 50vh;
+  }
+  .team-card {
+    width: 100vw;
+    margin: 1VW;
   }
 }
