@@ -3,18 +3,28 @@ import { NavLink } from "react-router-dom"
 
 import './NavBar.css'
 
-const NavBar = (): JSX.Element => {
+interface NavBarProps {
+  fb: string;
+  ig: string;
+}
+
+const NavBar = (props: NavBarProps): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggle = () => {
     setIsOpen(!isOpen)
   }
 
+  const {fb, ig} = props
+
+
+  
+
   return (
     <nav>
       <section id="header-contact">
         <a href='tel:+15403372400'>Call! (540)337-2400</a>
-        <p>Follow! &nbsp;&nbsp;&nbsp; <img src="/Instagram.png" alt="ig" /> &nbsp;&nbsp;&nbsp; <img src="/Facebook.png" alt="fb" /></p>
+        <p>Follow! &nbsp;&nbsp;&nbsp; <a href={fb} target='_blank'><img src="/Instagram.png" alt="ig" /></a> &nbsp;&nbsp;&nbsp; <a href={fb} target='_blank'><img src="/Facebook.png" alt="fb" /></a></p>
       </section>
 
       <section id='header'>

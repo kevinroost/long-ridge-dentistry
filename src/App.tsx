@@ -22,9 +22,12 @@ function App() {
     document.getElementById('full-name-input')!.focus()
   }
 
+  const fb = 'https://www.facebook.com/James-F-Hutchens-DDS-928358623880873/'
+  const ig = ''
+
   return (
     <>
-      <NavBar/>
+      <NavBar fb={fb} ig={ig}/>
       <Routes>
         <Route
         path='/'
@@ -42,6 +45,8 @@ function App() {
       <Footer 
         handleSetReason={handleSetReason} 
         reason={reason}
+        fb={fb}
+        ig={ig}
       />
     </>
   )

@@ -8,11 +8,13 @@ import { messageFormData } from '../types/forms'
 interface FooterProps {
   handleSetReason: (reason: string) => void;
   reason: string;
+  fb: string;
+  ig: string;
 }
 
 const Footer = (props: FooterProps) : JSX.Element => {
 
-  const {reason, handleSetReason} = props
+  const {reason, handleSetReason, fb, ig} = props
 
   const [submitted, setSubmitted] = useState<boolean>(false)
 
@@ -101,8 +103,8 @@ const Footer = (props: FooterProps) : JSX.Element => {
         </article>
       </div>
       <div id='links'>
-        <p>ig</p>
-        <p>fb</p>
+        <p><a href={fb} target='_blank'><img src="/Instagram.png" alt="ig" /></a></p>
+        <p><a href={fb} target='_blank'><img src="/Facebook.png" alt="fb" /></a></p>
         <a href='tel:+15403372400'>(540)337-2400</a>
         <a href="https://www.google.com/maps/place/Long+Ridge+Dentistry/@38.0363684,-79.0328795,17z/data=!3m1!4b1!4m6!3m5!1s0x89b35d951c01088d:0x12edc8cfaca9943e!8m2!3d38.0363642!4d-79.0306855!16s%2Fg%2F1tk23tm5" target='_blank'>2780 Stuarts Draft Hwy, Ste 102</a>
       </div>
