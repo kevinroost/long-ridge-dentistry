@@ -17,7 +17,7 @@
 
 .hero ul a {
   color: var(--mid);
-  font-size: 24px;
+  font-size: 20px;
   text-decoration: none;
   width: max-content;
   margin: 4px 0;
@@ -69,7 +69,7 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  padding: 0px 16px 0;
+  padding: 0;
   margin: 0px;
   width: 100%;
 }
@@ -123,12 +123,14 @@
   margin-left: 40px;
 }
 
-.info p, ul {
+.info p, 
+.info ul {
   margin: 0px 0px 16px;
   text-indent: 24px;
 }
   
-.info b, ul {
+.info b, 
+.info ul {
   color: var(--dark);
   width: min-content;
   /* align-self: center; */
@@ -148,6 +150,10 @@
 }
 
 @media (max-width: 850px) {
+  .info {
+    padding: 0 8px 0 0;
+    margin: 0 8px;
+  }
   .service-body {
     width: 100%;
     height: auto;
@@ -158,10 +164,23 @@
     width: 100%;
     padding: 3em 0px;
     gap: 0px;
+    margin: 0;
   }
   .service-list li {
     text-align: center;
-    
+    padding: 0;
+  }
+  .service-list ul {
+    padding: 0;
+  }
+  .service-body ul {
+    padding: 0;
+  };
+  .service-body li {
+    padding: 0 8px;
+  }
+  .service-body p {
+    padding: 0 8px;
   }
 }
 

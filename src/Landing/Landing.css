@@ -138,6 +138,9 @@
   .team-card:nth-last-child(-n+4){
     width: 50vw;
   }
+  #meet-the-team {
+    margin-top: 0px;
+  }
 }
 
 @media (max-width: 750px) {

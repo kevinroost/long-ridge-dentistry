@@ -1,6 +1,6 @@
 
 import { reviews } from "../data/reviews"
-import { Review } from "../types/review"
+import { Review } from "../types/data"
 import ReviewCard from "./ReviewCard"
 
 import './review.css'
